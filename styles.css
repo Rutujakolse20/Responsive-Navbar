@@ -5,18 +5,18 @@ body {
     padding: 0;
 }
 
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #aa6868;
+    background-color: #333;
     color: white;
     position: relative;
     max-width: 1200px; 
     margin: 0 auto; 
 }
-
 
 .logo img {
     height: 50px;
@@ -43,6 +43,7 @@ body {
     display: inline-block;
 }
 
+
 .menu-toggle {
     display: none;
 }
@@ -54,14 +55,13 @@ body {
     cursor: pointer;
 }
 
-
 @media (max-width: 768px) {
     .nav-links {
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #f00a0a;
+        background-color: #333;
         display: none;
         flex-direction: column;
         text-align: center;
@@ -72,11 +72,13 @@ body {
         margin: 1rem 0;
     }
 
+   
     .menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
     }
 
+  
     .hamburger {
-        display: block;
-    }
+        display: block;
+    }
 }
